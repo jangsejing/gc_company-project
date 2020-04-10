@@ -6,7 +6,7 @@ import kotlinx.coroutines.SupervisorJob
 
 /**
  * @author jess
- * @since 2020.03.20
+ * @since 2020.04.10
  */
 
 /** 기본 예외 처리기 */

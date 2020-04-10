@@ -12,7 +12,7 @@ import com.jess.gc.common.extension.addRipple
 
 /**
  * @author jess
- * @since 2020.03.20
+ * @since 2020.04.10
  */
 internal abstract class BaseRecyclerViewAdapter<T : Any, VD : ViewDataBinding>(
     @LayoutRes private val layoutId: Int = 0

@@ -6,7 +6,7 @@ import com.jess.gc.common.util.tryCatch
 
 /**
  * @author jess
- * @since 2020.03.20
+ * @since 2020.04.10
  */
 open class BaseViewHolder<T : Any?>(
     val viewDataBinding: ViewDataBinding

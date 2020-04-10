@@ -1,16 +1,16 @@
 package com.jess.gc
 
-import android.app.Application
 import androidx.appcompat.app.AppCompatDelegate
+import com.jess.gc.common.di.DaggerAppComponent
+import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
 import timber.log.Timber
 
 /**
  * @author jess
- * @since 2020.03.20
+ * @since 2020.04.10
  */
-//class JessApplication : DaggerApplication() {
-class JessApplication : Application() {
+class JessApplication : DaggerApplication() {
 
     override fun onCreate() {
         super.onCreate()
@@ -24,7 +24,7 @@ class JessApplication : Application() {
         }
     }
 
-//    override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
-//        return DaggerAppComponent.factory().create(this)
-//    }
+    override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
+        return DaggerAppComponent.factory().create(this)
+    }
 }

@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 
 /**
  * @author jess
- * @since 2020.03.20
+ * @since 2020.04.10
  */
 fun <T : ViewModel> AppCompatActivity.createViewModel(
     factory: ViewModelProvider.Factory,
